@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Date-By-Name Generator</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="date.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class="date-background">
+                <h1>Date By Name Generator</h1>
+                <p>Let the universe guide your path.<br>
+                Input your names below and we'll pick the perfect date.</p>
+                <div class="date-box">
+                    <input class="date-input" type="text" id="input_name" name="name" placeholder="My Name" style="text-align:right;"></input>
+                    &
+                    <input class="date-input" type="text" id="input_date" date="date" placeholder="My Date" style="text-align:left;"></input><br><br>
+        
+                    <button class="date-button" onclick="generate()">Plan My Date</button><br><br>
+                    <div id="output"></div>
+                    <button class="date-button" id="find_date" onclick="find_date()" style="display:none;"></button>
+                    <hr>
+                    <p>Feeling Adventurous?</p>
+                    <button class="date-button" id="surprise" onclick="surprise_date()">Surprise Us</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
